@@ -1,24 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Route, Routes, useLocation, useParams } from "react-router-dom";
+import Wrapper from "./component/Wrapper";
+import Navbar from "./component/Navbar";
+import Footer from "./component/Footer";
+import Homepage from "./page/Homepage/Homepage";
+import ListFligt from "./page/ListFlight/ListFligt";
 
 function App() {
+  const pathname = useLocation();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div
+        className={`${
+          pathname.pathname === "/" ? "img_bg" : ""
+        } max-h-[780px] h-screen`}
+      >
+        <Navbar />
+
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="flight" element={<ListFligt />} />
+        </Routes>
+        <Footer />
+      </div>
     </div>
   );
 }

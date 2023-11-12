@@ -1,13 +1,57 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  font-family: "Biennale", sans-serif;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Biennale";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Montserrat"),
+    url(../src/font/Biennale/Biennale\ Light.otf) format("woff2");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Biennale";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat"),
+    url(../src/font/Biennale/Biennale\ Medium.otf) format("woff2");
+}
+
+@font-face {
+  font-family: "Biennale";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Montserrat"),
+    url(../src/font/Biennale/Biennale\ Regular.otf) format("woff2");
+}
+
+@font-face {
+  font-family: "Biennale";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Montserrat"),
+    url(../src/font/Biennale/Biennale\ SemiBold.otf) format("woff2");
+}
+
+@font-face {
+  font-family: "Biennale";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat"),
+    url(../src/font/Biennale/Biennale\ Bold.otf) format("woff2");
+}
+
+@font-face {
+  font-family: "Biennale";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Montserrat"),
+    url(../src/font/Biennale/Biennale\ Black.otf) format("woff2");
 }

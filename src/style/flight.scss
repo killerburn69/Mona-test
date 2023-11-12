@@ -1,0 +1,75 @@
+.line{
+    position: relative;
+}
+.line::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: -4px;
+    left: -3px;
+    background-color: white;
+    border: 2px solid #4D46FA;
+}
+.line::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: -4px;
+    right: -3px;
+    background-color: #4D46FA;
+    border: 2px solid #4D46FA;
+}
+.line_detail{
+    position: relative;
+}
+.line_detail::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: -4px;
+    left: -4.5px;
+    background-color: white;
+    border: 2px solid #4D46FA;
+}
+.line_detail::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    bottom: -4px;
+    right: -4.5px;
+    background-color: #4D46FA;
+    border: 2px solid #4D46FA;
+}
+.line_span{
+    position: relative;
+}
+.line_span::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.underlines{
+    position: relative;
+}
+.underlines::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    bottom: 0px;
+    background: #4D46FA;
+}
